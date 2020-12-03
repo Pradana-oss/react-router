@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Container from './component/container';
+import Containeraction from './component/containeraction';
+import Containerright from './component/containerright';
+import Footer from './component/footer';
+import Header from './component/header';
+import Welcome from './component/welcome';
 
 ReactDOM.render(
   <React.StrictMode>
-  
+      <Container/>
+      <Containeraction/>
+      <Containerright/>
+      <Footer/>
+      <Header/>
+      <Welcome/>
   </React.StrictMode>,
   document.getElementById('root')
 );
