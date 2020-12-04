@@ -1,10 +1,6 @@
 import React, {Component} from 'react'
 
 class Welcome extends Component {
-    
-    constructor(props){
-        
-    }
 
     render(){
         return(
@@ -16,7 +12,7 @@ class Welcome extends Component {
                                 side is a parallax image."</em>
                         </p>
                     </div>
-                    <div classNameName="tm-page-col-right">
+                    <div className="tm-page-col-right">
                         <div
                             className="tm-welcome-parallax"
                             data-parallax="scroll"

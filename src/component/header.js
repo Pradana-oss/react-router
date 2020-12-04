@@ -4,16 +4,16 @@ class Header extends Component {
 
     render(){
         return(
-            <div className="container-fluid">
-            <div class="row tm-brand-row">
-                <div class="col-lg-4 col-10">
-                <div class="tm-brand-container">
-                    <div class="tm-brand-texts">
-                    <h1 class="text-uppercase tm-brand-name">Next Level</h1>
+        
+        <div className="row tm-brand-row">
+                <div className="col-lg-4 col-10">
+                <div className="tm-brand-container">
+                    <div className="tm-brand-texts">
+                    <h1 className="text-uppercase tm-brand-name">Next Level</h1>
                     </div>
                 </div>
                 </div>
-            </div>
+            
             <div className="col-lg-8 col-2 tm-nav-col">
                 <div className="tm-nav">
                     <nav className="navbar navbar-expand-lg navbar-light tm-navbar">
@@ -31,13 +31,11 @@ class Header extends Component {
                             <ul className="navbar-nav ml-auto mr-0">
                                 <li className="nav-item active">
                                     <div className="tm-nav-link-highlight"></div>
-                                    <a className="nav-link" href="#"
-                                    >Home <span className="sr-only">(current)</span></a
-                                    >
+                                    <Link className="nav-link" to="/">Home <span classNameName="sr-only"></span></Link>
                                 </li>
                                 <li className="nav-item">
                                     <div className="tm-nav-link-highlight"></div>
-                                    <a className="nav-link" href="about.html">About</a>
+                                    <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
                                     <div className="tm-nav-link-highlight"></div>
@@ -53,6 +51,7 @@ class Header extends Component {
                 </div>
             </div>
         </div>
+        
         )
     }
 }
